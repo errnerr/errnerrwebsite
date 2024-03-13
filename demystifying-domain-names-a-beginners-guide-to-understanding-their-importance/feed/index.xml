@@ -20,4 +20,4 @@
 </channel>
 </rss>
 
-<!-- plugin=object-cache-pro client=phpredis metric#hits=956 metric#misses=58 metric#hit-ratio=94.3 metric#bytes=4926791 metric#prefetches=0 metric#store-reads=104 metric#store-writes=2 metric#store-hits=77 metric#store-misses=54 metric#sql-queries=4 metric#ms-total=475.52 metric#ms-cache=16.64 metric#ms-cache-avg=0.1585 metric#ms-cache-ratio=3.5 -->
+
