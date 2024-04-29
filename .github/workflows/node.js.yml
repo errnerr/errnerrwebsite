@@ -8,9 +8,9 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-      permissions:
+    permissions:
       contents: write
+    runs-on: ubuntu-latest
 
     strategy:
       matrix:
