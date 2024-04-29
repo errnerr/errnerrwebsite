@@ -5,9 +5,24 @@ const fs = require('fs-extra');
 
 const baseURL = 'https://errnerr.co.uk'; // Change this to the website you want to crawl
 
+const userAgents = [
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15',
+  'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:88.0) Gecko/20100101 Firefox/88.0',
+  'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1'
+];
+
+function getRandomUserAgent() {
+  return userAgents[Math.floor(Math.random() * userAgents.length)];
+}
+
 async function fetchURL(url) {
   try {
-    const response = await axios.get(url);
+    const response = await axios.get(url, {
+      headers: {
+        'User-Agent': getRandomUserAgent()
+      }
+    });
     return response.data;
   } catch (error) {
     console.error(`Error fetching ${url}: ${error}`);
