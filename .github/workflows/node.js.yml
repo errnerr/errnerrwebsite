@@ -23,10 +23,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: npm ci
+    - run: npm start
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         ref: ${{ github.head_ref }}
-        commit_message: Sitemap added
-    - run: npm ci
-    - run: npm start
-    
+        commit_message: Sitemap updated
