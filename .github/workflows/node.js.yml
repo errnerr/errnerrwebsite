@@ -8,8 +8,9 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+      permissions:
+      contents: write
 
     strategy:
       matrix:
@@ -24,6 +25,7 @@ jobs:
         cache: 'npm'
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
+        ref: ${{ github.head_ref }}
         commit_message: Sitemap added
     - run: npm ci
     - run: npm start
