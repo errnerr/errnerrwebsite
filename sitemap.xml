@@ -1,14 +1,1 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Redirecting...</title>
-		<meta http-equiv="refresh" content="0;url=/sitemaps.xml">
-	</head>
-	<body>
-		<script type="text/javascript">
-			window.location = "/sitemaps.xml";
-		</script>
-
-		<p>You are being redirected to <a href="/sitemaps.xml">/sitemaps.xml</a></p>
-	</body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://errnerr.co.uk</loc></url><url><loc>https://errnerr.co.uk/a-guide-to-updating-your-website-in-2024/</loc></url><url><loc>https://errnerr.co.uk/privacy-friendly-website-analytics/</loc></url><url><loc>https://errnerr.co.uk/blog</loc></url><url><loc>https://errnerr.co.uk/demystifying-domain-names-a-beginners-guide-to-understanding-their-importance/</loc></url><url><loc>https://errnerr.co.uk/about/</loc></url><url><loc>https://errnerr.co.uk/unveiling-website-hosting-understanding-the-backbone-of-your-online-presence/</loc></url><url><loc>https://errnerr.co.uk/the-imperative-need-for-a-website-in-2024-a-business-essential/</loc></url><url><loc>https://errnerr.co.uk/why-choose-wordpress-for-your-website-in-2024/</loc></url><url><loc>https://errnerr.co.uk/how-to-pick-the-best-website-name-for-your-business/</loc></url><url><loc>https://errnerr.co.uk/website-analytics-a-guide-for-website-owners/</loc></url></urlset>
